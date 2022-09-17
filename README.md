@@ -1,4 +1,13 @@
 # Reinforcement-Learning-Lunar-Lander
+## Project Overview
+This project is a basic exercise in demonstrating the use of artificial intelligence with neural networks and reinforcement learning to have a Player (the AI) learn how to play a simple 2D game, Lunar Lander, with the goal of landing a space-ship between two flags on a random terrain. The space-ship is capable of making very basic movements (do nothing, fire left engine, fire down engine, and fire right engine) in order to navigate to the goal. 
+
+The main technologies & libraries used in this project include:
+- Python
+- Visual Studio Code IDE
+- [OpenAI's Gym API](https://github.com/openai/gym) - for the Lunar Lander game environment
+- [Stable-Baselines3 Reinforcement Learning API](https://github.com/DLR-RM/stable-baselines3) - for streamlined reinforcement learning model implementation
+- TensorBoard - for visual representations of model training
 
 ## Environment
 What are we trying to solve? In this case we are attempting to solve the Lunar Lander game environment.
