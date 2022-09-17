@@ -42,3 +42,11 @@ In this file we see the basic code required in order to load the Gym environment
 ![lander random actions](./assets/images/lander_random.gif)
 
 As we can see above (and as would be expected), the Agent performs very poorly just taking random actions. Without a model to learn with, any chance of the Agent completing the task is negligible. 
+
+
+## Using A Model (rl-model.py)
+In this file we can see some differences from the `rl-random.py` file, most notable the importation of the `PPO` model from `stable_baselines3` in the beginning. 
+Many of the default settings for each model are adequate so we will not be making any material changes once the model is loaded in Line 10; this is the power of the stable_baselines3 package, which can also be seen in the ease of training the model with a simple `model.learn` on Line 11. As written, the model will train for 100k timesteps and then be rendered for visual evaluation. 
+
+Let's see how it now performs:
+![lander PPO 100k](./assets/images/lander_PPO_100k.gif)
