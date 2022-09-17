@@ -11,7 +11,7 @@ The main technologies & libraries used in this project include:
 - [Stable-Baselines3 Reinforcement Learning API](https://github.com/DLR-RM/stable-baselines3) - for streamlined reinforcement learning model implementation
 - TensorBoard - for visual representations of model training
 
-- ## Vocabulary
+## Vocabulary
 For ease of explantion, some basic vocabulary related to reinforcement learning will be reviewed: 
 
 - ### Environment
@@ -36,4 +36,9 @@ A time-step in the environment. In general, each step in the environment will re
 - ### Reward
 The agent receives a reward, either positive or negative, for its action in each step based on how it interacted with the environment and the resulting subsequent observation.
 
+## Basic Code (rl-random.py)
+In this file we see the basic code required in order to load the Gym environment and have an Agent interact with the environment. As no model has been loaded, the Agent will only take random actions and cannot learn from its interactions in the environment. 
 
+![lander random actions](./assets/images/lander_random.gif)
+
+As we can see above (and as would be expected), the Agent performs very poorly just taking random actions. Without a model to learn with, any chance of the Agent completing the task is negligible. 
